@@ -1,0 +1,54 @@
+Assignment 5 comments:
+
+Question 1:
+a. Choosing a route  10/10
+
+b. new info  10/10
+
+c. value of information: 2/10
+More needed here - you need to compute the EU of smooth and !smooth.
+
+d: chatGPT:  5/5
+
+Question 2: HMMs
+
+a: load 3/5
+Please don't hardcode paths to files on your computer
+
+b. generate 6/10
+Not totally working, no argparse
+zahid2 % python HMM.py
+Traceback (most recent call last):
+  File "/Users/cbrooks/courses/Fall23/CS462/student-repos/assignment5/assignment-5-hmms-bayesian-networks-and-decisions-szahid2/HMM.py", line 134, in <module>
+    random_observation = model.generate(20)
+                         ^^^^^^^^^^^^^^^^^^
+
+c. forward 5/10
+No argparse, not working.
+
+d. viterbi  5/10
+Also not working
+Traceback (most recent call last):
+  File "/Users/cbrooks/courses/Fall23/CS462/student-repos/assignment5/assignment-5-hmms-bayesian-networks-and-decisions-szahid2/HMM.py", line 137, in <module>
+    best_state_sequence = model.viterbi(observations)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cbrooks/courses/Fall23/CS462/student-repos/assignment5/assignment-5-hmms-bayesian-networks-and-decisions-szahid2/HMM.py", line 111, in viterbi
+    viterbi_table[0, :] = [self.emissions[state].get(observations[0], 0) for state in states]
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cbrooks/courses/Fall23/CS462/student-repos/assignment5/assignment-5-hmms-bayesian-networks-and-decisions-szahid2/HMM.py", line 111, in <listcomp>
+    viterbi_table[0, :] = [self.emissions[state].get(observations[0], 0) for state in states]
+                           ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'C'
+
+Question 3: Bayesian Nets
+
+a. query  5/5 
+
+b. Car net 10/10
+
+c. new node  0/10
+not done
+
+66/100
+
+
